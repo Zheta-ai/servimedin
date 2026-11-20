@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es" data-type="service">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servimedin Tulcán</title>
+<meta name="description" content="Tratamiento del dolor en Tulcán con el Dr. Jairo Chamorro Peñafiel, anestesiólogo. Consultorio y Farmacias Servimedin. Agenda tu cita por WhatsApp.">
+<meta name="page-type" content="service">
+<meta name="site-kind" content="other">
+<meta property="og:title" content="Servimedin · Tratamiento del dolor en Tulcán">
+<meta property="og:description" content="Consulta del dolor con el Dr. Jairo Chamorro Peñafiel, anestesiólogo, y Farmacias Servimedin con entrega en Tulcán.">
+<meta name="theme-color" content="#0E2A20">
+<link rel="preload" href="fonts/serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  Tipo: service (consulta médica del dolor) + dos farmacias. Acción principal: Agendar cita por WhatsApp.
+  Deal: verde farmacia profundo sobre blanco verdoso; el verde es el color de la cruz de farmacia y calma frente al dolor;
+        par Instrument Serif (títulos) + Instrument Sans (texto); hero partido (texto + foto del consultorio); radio suave; una banda oscura al cierre.
+  Secciones: hero (1) · dolor (1, foto ecografía) · primera consulta (1, tipográfica) · momento: frase de trayectoria con palabras que se encienden (1) ·
+             medico (1, momento tipográfico: credenciales) · farmacias (2, foto farmacia, entrega, receta) · cita (1, formulario) · cierre · footer.
+-->
+<a class="skip" href="#cita">Saltar a agendar cita</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Servimedin, inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="11" y="3" width="10" height="26" rx="2.5"/><rect x="3" y="11" width="26" height="10" rx="2.5"/></svg>
+      Servimedin
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Principal">
+      <a href="#dolor">Qué tratamos</a>
+      <a href="#medico">El médico</a>
+      <a href="#farmacias">Farmacias</a>
+      <a href="#cita">Ubicación</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm" href="#cita">Agendar cita</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Abrir menú</span><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" data-enter aria-labelledby="h1">
+    <div class="hero-text">
+      <p class="pill"><span class="dot" aria-hidden="true"></span>Anestesiólogo especialista desde 2013</p>
+      <h1 id="h1"><span class="ln">Tratamiento</span> <span class="ln">del dolor</span> <span class="ln">en Tulcán</span></h1>
+      <p class="hero-sub">Consulta con el Dr. Jairo Chamorro Peñafiel para dolor de espalda, articulaciones y nervios, con bloqueos e infiltraciones guiados por ecografía. Y tus medicinas, en las Farmacias Servimedin.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#cita">Agendar cita</a>
+        <a class="btn btn-line" href="#farmacias">Ver las farmacias</a>
+      </div>
+      <dl class="hero-facts">
+        <div><dt>Especialidad</dt><dd>Universidad Central del Ecuador</dd></div>
+        <div><dt>Ecografía</dt><dd>Máster, Universidad de Salamanca</dd></div>
+      </dl>
+    </div>
+    <figure class="hero-ph">
+      <img src="img/hero.jpg" alt="Consultorio Servimedin con camilla, ecógrafo portátil y escritorio junto a una ventana con vista a las montañas" width="1536" height="864" fetchpriority="high">
+    </figure>
+  </section>
+
+  <section class="sec dolor" id="dolor" aria-labelledby="h-dolor" style="--h:1">
+    <div class="wrap dolor-in">
+      <div class="dolor-text">
+        <h2 id="h-dolor">Dolores que tratamos</h2>
+        <p class="lead">El objetivo es que vuelvas a moverte y a dormir sin dolor. Cuando hace falta, el doctor aplica el medicamento justo en el nervio o la articulación, viéndolo en la pantalla del ecógrafo.</p>
+        <ul class="conds">
+          <li><h3>Dolor lumbar y ciática</h3><p>Dolor en la parte baja de la espalda que baja a la pierna.</p></li>
+          <li><h3>Rodilla, cadera y hombro</h3><p>Artrosis, desgaste y dolor al caminar o al levantar el brazo.</p></li>
+          <li><h3>Dolor de nervios</h3><p>Ardor u hormigueo por diabetes o después de un herpes zóster.</p></li>
+          <li><h3>Cuello y cabeza</h3><p>Dolor cervical y dolores de cabeza que nacen en el cuello.</p></li>
+          <li><h3>Después de una cirugía</h3><p>Dolor que sigue semanas después de la operación.</p></li>
+          <li><h3>Antes de una cirugía</h3><p>Valoración preanestésica para operarte con tranquilidad.</p></li>
+        </ul>
+      </div>
+      <figure class="ph ph-tall">
+        <img src="img/ecografia.jpg" alt="Manos con guantes sosteniendo un transductor de ecografía sobre el hombro de un paciente, con la imagen del nervio en el monitor" width="1024" height="1280" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec primera" id="primera" aria-labelledby="h-pri" style="--h:1">
+    <div class="wrap pri-in">
+      <div class="pri-head">
+        <h2 id="h-pri">Así es tu primera consulta</h2>
+        <div class="price-row">
+          <p><span>Consulta</span><strong data-assumed>$35</strong></p>
+          <p><span>Duración</span><strong data-assumed>40 min</strong></p>
+        </div>
+        <p class="note">Trae tus exámenes, radiografías o resonancias y la lista de medicamentos que tomas.</p>
+        <a class="btn btn-primary" href="#cita">Agendar mi primera consulta</a>
+      </div>
+      <ol class="steps steps-big">
+        <li><b>Te escuchamos.</b> Dónde duele, desde cuándo y qué has probado.</li>
+        <li><b>Te examinamos.</b> Revisión física y, si hace falta, ecografía en el mismo consultorio.</li>
+        <li><b>Plan por escrito.</b> Medicación, ejercicios o un procedimiento, explicados con calma.</li>
+        <li><b>Seguimiento.</b> Un control para ver cómo respondes y ajustar.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="statement" aria-label="Trayectoria del doctor">
+    <div class="wrap">
+      <p class="say" id="say">13 años como anestesiólogo en el Hospital Luis Gabriel Dávila de Tulcán, controlando el dolor antes, durante y después de cada cirugía.</p>
+    </div>
+  </section>
+
+  <section class="sec medico" id="medico" aria-labelledby="h-med" style="--h:1">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-med">Dr. Jairo Chamorro Peñafiel</h2>
+        <p>Médico anestesiólogo de Tulcán. Atiende la consulta del dolor en Servimedin desde 2020 y lidera el centro quirúrgico del Hospital Luis Gabriel Dávila.</p>
+      </div>
+      <div class="cv">
+        <div>
+          <h3 class="cv-h">Formación</h3>
+          <ul class="cv-list">
+            <li><b>Especialista en Anestesiología</b><span>Universidad Central del Ecuador</span></li>
+            <li><b>Máster en Anestesia y Analgesia guiada por Ecografía</b><span>Universidad de Salamanca, egresado</span></li>
+            <li><b>Doctor en Medicina</b><span>Escuela Latinoamericana de Medicina</span></li>
+            <li><b>Magíster en Administración Pública</b><span>Universidad Politécnica Estatal del Carchi</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="cv-h">Trayectoria</h3>
+          <ul class="cv-list cv-years">
+            <li><i>2013–hoy</i><b>Anestesiólogo, Hospital Luis Gabriel Dávila</b><span>Líder del centro quirúrgico desde 2025</span></li>
+            <li><i>2020–hoy</i><b>Consulta del dolor, Servimedin</b><span>Consulta externa y procedimientos para el dolor</span></li>
+            <li><i>2023–hoy</i><b>Responsable técnico, Centro de Especialidades Saude</b><span>Consulta especializada en dolor</span></li>
+            <li><i>2022–hoy</i><b>Docente tutor de internado, Universidad Técnica del Norte</b><span>Antes docente en la UPEC y en UNIANDES</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec farmacias" id="farmacias" aria-labelledby="h-far" style="--h:2">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-far">Farmacias Servimedin</h2>
+        <p>Dos farmacias en Tulcán con las medicinas que receta el doctor y las de todos los días. Cotiza tu receta por WhatsApp y te la llevamos a casa.</p>
+      </div>
+      <div class="far-grid">
+        <figure class="ph far-ph">
+          <img src="img/farmacia.jpg" alt="Farmacéutica sonriente detrás del mostrador de una farmacia con estanterías ordenadas" width="1024" height="1280" loading="lazy">
+        </figure>
+        <div class="sedes">
+          <article class="sede">
+            <h3>Servimedin Centro</h3>
+            <p class="addr">Calle Sucre y Ayacucho, centro de Tulcán</p>
+            <p class="hours"><span>Lunes a sábado</span> <b data-assumed>8:00–21:00</b></p>
+            <p class="hours"><span>Domingo</span> <b data-assumed>9:00–14:00</b></p>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&query=Calle+Sucre+y+Ayacucho+Tulc%C3%A1n" target="_blank" rel="noopener">Cómo llegar</a>
+          </article>
+          <article class="sede">
+            <h3>Servimedin Norte</h3>
+            <p class="addr">Av. Veintimilla, sector El Bosque · junto al consultorio</p>
+            <p class="hours"><span>Lunes a domingo</span> <b data-assumed>8:00–22:00</b></p>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&query=Avenida+Veintimilla+Tulc%C3%A1n" target="_blank" rel="noopener">Ver la zona</a>
+          </article>
+        </div>
+        <article class="deliver">
+          <figure class="ph"><img src="img/entrega.jpg" alt="Repartidor entrega una bolsa de farmacia a un señor mayor en la puerta de su casa" width="1024" height="1280" loading="lazy"></figure>
+          <h3>Entrega a domicilio en Tulcán</h3>
+          <p>Pide por WhatsApp y recibe tus medicinas en casa el mismo día.</p>
+        </article>
+      </div>
+
+      <div class="quote">
+        <form class="form" id="farForm" novalidate>
+          <h3 class="form-h">Cotiza tu receta</h3>
+          <p class="form-intro">Llena esto, se abre WhatsApp con tu pedido y ahí adjuntas la foto de la receta.</p>
+          <div class="field">
+            <span class="lbl" id="lblSede">Farmacia</span>
+            <div class="seg" role="radiogroup" aria-labelledby="lblSede">
+              <label><input type="radio" name="sede" value="Servimedin Centro" checked><span>Centro</span></label>
+              <label><input type="radio" name="sede" value="Servimedin Norte"><span>Norte</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label class="lbl" for="fName">Tu nombre</label>
+            <input id="fName" name="nombre" type="text" autocomplete="name">
+            <p class="err" id="fNameErr"></p>
+          </div>
+          <div class="field">
+            <label class="lbl" for="fMeds">Medicinas que necesitas <small>(opcional si mandas la receta)</small></label>
+            <textarea id="fMeds" name="meds" rows="3" placeholder="Ej.: pregabalina 75 mg, una caja"></textarea>
+          </div>
+          <div class="field">
+            <span class="lbl" id="lblEnt">¿Cómo la recibes?</span>
+            <div class="seg" role="radiogroup" aria-labelledby="lblEnt">
+              <label><input type="radio" name="entrega" value="Retiro en farmacia" checked><span>La retiro</span></label>
+              <label><input type="radio" name="entrega" value="Entrega a domicilio"><span>A domicilio</span></label>
+            </div>
+          </div>
+          <div class="field" id="fZoneWrap" hidden>
+            <label class="lbl" for="fZone">Barrio o sector</label>
+            <input id="fZone" name="sector" type="text" placeholder="Ej.: El Bosque, Tajamar, centro">
+            <p class="err" id="fZoneErr"></p>
+          </div>
+          <a class="btn btn-primary btn-block" id="farSend" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+        </form>
+        <figure class="ph quote-ph">
+          <img src="img/receta.jpg" alt="Celular fotografiando una receta médica escrita a mano sobre el mostrador de una farmacia" width="1024" height="1280" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec cita" id="cita" aria-labelledby="h-cita" style="--h:1">
+    <div class="wrap cita-in">
+      <div class="visit">
+        <h2 id="h-cita">Agenda tu cita</h2>
+        <dl class="visit-list">
+          <div><dt>Consultorio</dt><dd>Servimedin, Av. Veintimilla, sector El Bosque, Tulcán</dd></div>
+          <div><dt>Lunes a viernes</dt><dd data-assumed>15:00–19:00</dd></div>
+          <div><dt>Sábados</dt><dd data-assumed>8:30–12:30</dd></div>
+          <div><dt>Pago</dt><dd data-assumed>Efectivo o transferencia</dd></div>
+        </dl>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&query=Avenida+Veintimilla+Tulc%C3%A1n" target="_blank" rel="noopener">Ver la zona en el mapa</a>
+        <p class="urgent"><b>¿Es una emergencia?</b> Dolor de pecho, falta de aire o un golpe fuerte no esperan cita: llama al 911 o ve a emergencias del Hospital Luis Gabriel Dávila.</p>
+      </div>
+      <form class="form" id="citaForm" novalidate>
+        <div class="field">
+          <label class="lbl" for="cName">Nombre del paciente</label>
+          <input id="cName" type="text" autocomplete="name">
+          <p class="err" id="cNameErr"></p>
+        </div>
+        <div class="field">
+          <label class="lbl" for="cReason">Motivo</label>
+          <select id="cReason">
+            <option value="">Elige el motivo</option>
+            <option>Dolor lumbar o ciática</option>
+            <option>Dolor de rodilla, cadera u hombro</option>
+            <option>Dolor de nervios</option>
+            <option>Dolor de cuello o cabeza</option>
+            <option>Dolor después de una cirugía</option>
+            <option>Valoración antes de una cirugía</option>
+            <option>Otro motivo</option>
+          </select>
+          <p class="err" id="cReasonErr"></p>
+        </div>
+        <div class="field">
+          <span class="lbl" id="lblFirst">¿Primera vez con el doctor?</span>
+          <div class="seg" role="radiogroup" aria-labelledby="lblFirst">
+            <label><input type="radio" name="first" value="Primera consulta" checked><span>Sí, primera vez</span></label>
+            <label><input type="radio" name="first" value="Control"><span>Es un control</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <span class="lbl" id="lblWhen">¿Cuándo te queda mejor?</span>
+          <div class="seg" role="radiogroup" aria-labelledby="lblWhen">
+            <label><input type="radio" name="when" value="entre semana por la tarde" checked><span>Entre semana, tarde</span></label>
+            <label><input type="radio" name="when" value="sábado por la mañana"><span>Sábado, mañana</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label class="lbl" for="cNote">Algo que el doctor deba saber <small>(opcional)</small></label>
+          <textarea id="cNote" rows="2" placeholder="Ej.: me duele hace 3 meses, tomo ibuprofeno"></textarea>
+        </div>
+        <a class="btn btn-primary btn-block" id="citaSend" href="#" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+        <p class="form-foot">El doctor o su asistente te confirma el día y la hora por WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="h-cl">
+    <div class="wrap close-in">
+      <h2 id="h-cl">¿El dolor no cede con los analgésicos de siempre?</h2>
+      <p>Una valoración a tiempo evita meses de pastillas que no funcionan. Escríbele al doctor.</p>
+      <a class="btn btn-light" id="closeWa" href="https://wa.me/593981383895?text=Hola%20doctor%2C%20quiero%20agendar%20una%20valoraci%C3%B3n%20para%20el%20dolor" target="_blank" rel="noopener">Escribir al doctor</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="logo" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="11" y="3" width="10" height="26" rx="2.5"/><rect x="3" y="11" width="26" height="10" rx="2.5"/></svg>Servimedin</a>
+    <nav aria-label="Pie de página"><a href="#dolor">Qué tratamos</a><a href="#medico">El médico</a><a href="#farmacias">Farmacias</a><a href="#cita">Agendar cita</a></nav>
+    <p class="foot-note">Consultorio y Farmacias Servimedin · Tulcán, Carchi. La información de esta página no reemplaza una consulta médica; en una emergencia llama al 911. Fotografías generadas con IA como referencia.</p>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn btn-primary btn-block" href="#cita">Agendar cita</a></div>
+
+<script src="app.js"></script>
+</body>
+</html>
