@@ -1,5 +1,5 @@
 /* Servimedin — formularios a WhatsApp, menú y el momento de la frase */
-const WA = "593981383895";
+const WA = "593981324701";
 const $ = s => document.querySelector(s);
 const wa = msg => `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
 const radio = (form, name) => form.querySelector(`input[name="${name}"]:checked`)?.value || "";
